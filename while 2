@@ -1,0 +1,26 @@
+package Aula_13_Lista;
+
+import java.util.Scanner;
+
+public class rptwhile2 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		double numero, soma = 0;
+        double media;
+        
+        int i = 1; 
+        while (i <= 5) {
+            System.out.println("Informe a nota " + i + ": ");
+            numero = ler.nextDouble();
+            soma = soma + numero;
+            i++; 
+        }
+        media = soma / 5;
+        System.out.println("Soma: " + soma);
+        System.out.println("Média: " + media);
+
+
+	}
+
+}
