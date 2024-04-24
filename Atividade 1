@@ -1,0 +1,24 @@
+package lpa;
+
+import java.util.Scanner;
+
+public class Ativrpt1 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner (System.in);
+		int numero;
+		
+		System.out.print("Digite um valor limite:");
+        numero = ler.nextInt(); 
+        System.out.println("Números ímpares no intervalo de " + numero + ":" );
+        
+        for(int i = 1; i <=numero; i++ ) {
+		if (i % 2 != 0) {
+			System.out.println(i+ " ");
+		}
+        }   
+       
+       
+	}
+
+}
